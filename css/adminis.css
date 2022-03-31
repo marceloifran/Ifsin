@@ -11,6 +11,10 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
 }
+.text-center:hover {
+    color: paleturquoise;
+    cursor: pointer;
+}
 
 .hero{
     background-color: #887fd4;
