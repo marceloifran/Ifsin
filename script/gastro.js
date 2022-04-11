@@ -13,7 +13,7 @@ if (res.status === 200){
         const {nombre,telefono,img1,img2,img3} = datos[i]
         cardModa.innerHTML  += `
         <div class = "text-center">
-        <h1 class="text-center">${nombre}</h1>
+        <h1 class="text-center">"${nombre}"</h1>
         <div class="slider-frame">
         <ul>
             <li><img src="${img1}" alt=""></li>
@@ -22,9 +22,11 @@ if (res.status === 200){
             <li><img src="${img1}" alt=""></li>
         </ul>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-lg">  <a href="youtube.com"></a>${telefono}</button>
-        <a href="tel:+${telefono}">Telefono</a>        
-        </div>
+        <div class="text-center">
+        <a href="https://api.whatsapp.com/send?phone=${telefono}&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true">WhatsApp</a>
+        <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true">Llamada</a>
+        </div>    
+        <hr>
         `
     }
     
