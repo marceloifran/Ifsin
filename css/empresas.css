@@ -314,6 +314,8 @@ background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, F
     float: left;
 }
 
+hr {border: 5px solid #323036; height: 2px; width: 100%;}
+
 /* footer */
 
 footer{
@@ -414,6 +416,8 @@ input[type="submit"]:hover{
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+
 
 
 

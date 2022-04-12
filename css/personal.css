@@ -266,6 +266,7 @@ background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, F
     float: left;
 }
 
+hr {border: 5px solid #236a70; height: 2px; width: 100%;}
 
 /* footer */
 
@@ -353,6 +354,7 @@ input[type="submit"]:hover{
 .slider-frame img {
 	width: 100%;
 }
+
 
 @keyframes slide {
 	0% {margin-left: 0;}

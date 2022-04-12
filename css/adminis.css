@@ -293,6 +293,8 @@ body{
     float: left;
 }
 
+hr {border: 5px solid #887fd4; height: 2px; width: 100%;}
+
 /* footer */
 
 footer{

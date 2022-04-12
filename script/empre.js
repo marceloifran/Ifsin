@@ -10,9 +10,19 @@ if (res.status === 200){
 
     for (const i in datos){
         console.log(datos[i])
-        const {nombre,telefono,img1,img2,img3} = datos[i]
+        const {nombre,telefono,img1,img2,img3,ubicacion,desc} = datos[i]
         cardEmpresa.innerHTML  += `
-        <h1 class="text-center">"${nombre}"</h1>
+        <figure class="text-center">
+        <blockquote class="blockquote">
+        <p>${nombre}</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+        <cite title="Source Title">${ubicacion}</cite>
+        </figcaption>
+        <figcaption class="blockquote-footer">
+        <cite title="Source Title">${desc}</cite>
+        </figcaption>
+</figure>
         <div class="slider-frame">
         <ul>
             <li><img src="${img1}" alt=""></li>
@@ -22,8 +32,8 @@ if (res.status === 200){
         </ul>
         </div>
         <div class="text-center">
-        <a href="https://api.whatsapp.com/send?phone=${telefono}&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true">WhatsApp</a>
-        <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true">Llamada</a>
+        <a href="https://api.whatsapp.com/send?phone=${telefono}&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img/whatsapp.png" alt="" style="width: 30px;"> WhatsApp</a>
+        <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"><img src="img/llamada-telefonica.png" alt="" style="width: 30px;"> Llamada</a>
         </div>
         <hr>
         `

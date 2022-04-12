@@ -249,6 +249,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
     margin-top: 25px;
 }
 
+hr {border: 5px solid orange; height: 2px; width: 100%;}
+
 .form{
     display: flex;
     flex-wrap: wrap;

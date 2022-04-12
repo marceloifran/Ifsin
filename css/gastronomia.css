@@ -238,6 +238,7 @@ background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, F
     width: 40%;
 }
 
+hr {border: 5px solid #eab061; height: 2px; width: 100%;}
 
 .info{
  

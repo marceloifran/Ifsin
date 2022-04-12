@@ -285,6 +285,7 @@ body{
 
 
 /* footer */
+hr {border: 5px solid #f6c5f6; height: 2px; width: 100%;}
 
 footer{
     background-color: #f6c5fb;
