@@ -10,7 +10,7 @@ if (res.status === 200){
 
     for (const i in datos){
         console.log(datos[i])
-        const {nombre,telefono,img1,img2,img3,ubicacion,desc} = datos[i]
+        const {nombre,telefono,img1,img2,img3,img4,ubicacion,desc,ofer1,ofer2,ofer3,ofer4} = datos[i]
         cardSuper.innerHTML  += `
         
         <figure class="text-center">
@@ -23,13 +23,14 @@ if (res.status === 200){
         <figcaption class="blockquote-footer">
         <cite title="Source Title">${desc}</cite>
         </figcaption>
-</figure>
+        </figure>
         <div class="slider-frame">
+        <p class="text-center" id="oferta">OFERTAS !!!</p>
         <ul>
-            <li><img src="${img1}" alt=""></li>
-            <li><img src="${img2}" alt=""></li>
-            <li><img src="${img3}" alt=""></li>
-            <li><img src="${img1}" alt=""></li>
+            <li><img src="${img1}" alt=""><p class="text-center" id="oferta">${ofer1}</p></li>
+            <li><img src="${img2}" alt=""><p class="text-center"id="oferta">${ofer2}</p></li>
+            <li><img src="${img3}" alt=""><p class="text-center"id="oferta">${ofer3}</p></li>
+            <li><img src="${img4}" alt=""><p class="text-center"id="oferta">${ofer4}</p></li>
         </ul>
         </div>
         <div class="text-center">

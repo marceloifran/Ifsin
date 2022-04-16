@@ -23,7 +23,7 @@ if (res.status === 200){
         <cite title="Source Title">${desc}</cite>
         </figcaption>
 </figure>
-        <div class="slider-frame">
+        <div class="slider-frame" style=border:"2px solid blue;">
         <ul>
             <li><img src="${img1}" alt=""></li>
             <li><img src="${img2}" alt=""></li>
