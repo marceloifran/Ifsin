@@ -15,16 +15,16 @@ if (res.status === 200){
         
         <figure class="text-center">
         <blockquote class="blockquote">
-        <p>${nombre}</p>
+        <p class = "pap">${nombre}</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-        <cite title="Source Title">${ubicacion}</cite>
+        <cite title="Source Title" class ="pap">${ubicacion}</cite>
         </figcaption>
         <figcaption class="blockquote-footer">
         <cite title="Source Title">${desc}</cite>
         </figcaption>
         </figure>
-        <div class="slider-frame">
+        <div class="slider-frame"> 
         <p class="text-center" id="oferta">OFERTAS !!!</p>
         <ul>
             <li><img src="${img1}" alt=""><p class="text-center" id="oferta">${ofer1}</p></li>
