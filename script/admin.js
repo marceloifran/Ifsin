@@ -12,7 +12,7 @@ if (res.status === 200){
         console.log(datos[i])
         const {nombre,telefono,img1,img2,img3,ubicacion,desc,ofer1,ofer2,ofer3,ofer4} = datos[i]
         cardAmin.innerHTML  += `
-       <div class="text-center"> <box-icon name='building-house' animation='flashing' ></box-icon></div>
+       <div class="text-center"> <img src="img_demas/icons8-casa (1).gif" alt=""  style="width: 50px;"></div>
         <figure class="text-center">
         <blockquote class="blockquote">
         <p>"${nombre}"</p>

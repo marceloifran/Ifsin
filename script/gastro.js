@@ -13,7 +13,7 @@ if (res.status === 200){
         const {nombre,telefono,img1,img2,img3,ubicacion,desc,ofer1,ofer2,ofer3,ofer4} = datos[i]
         cardModa.innerHTML  += `
         <div class = "text-center">
-        <box-icon name='food-menu' type='solid' animation='spin' ></box-icon>
+        <img src="img_demas/icons8-reajuste-salarial.gif" alt=""  style="width: 50px;">
         <figure class="text-center">
         <blockquote class="blockquote">
         <p>${nombre}</p>
