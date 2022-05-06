@@ -37,9 +37,21 @@
       "type": "image/png"
     },
     {
+      "src": "iconos/tech 14.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
       "src": "iconos/logo.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "iconos/logo 12.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "iconos/tech 8.png",
