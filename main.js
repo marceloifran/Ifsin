@@ -1,7 +1,33 @@
-ScrollReveal().reveal('.hero',{delay:200})
-ScrollReveal().reveal('.card',{delay:300})
-ScrollReveal().reveal('.link',{delay:350})
-ScrollReveal().reveal('.contenedor-textos-main',{delay:350})
+ScrollReveal().reveal('.textos-hero',{
+    duration:3000,
+    origin:'botton',
+    distance:'-150px'
+})
+ScrollReveal().reveal('.card',{
+    duration:3000,
+    origin:'left',
+    distance:'-100px'
+})
+ScrollReveal().reveal('.link',{
+    duration:3000,
+    origin:'left',
+    distance:'-100px'
+})
+ScrollReveal().reveal('.contenedor-textos-main',{
+    duration:3000,
+    origin:'top',
+    distance:'-180px'
+})
+ScrollReveal().reveal('.imgp',{
+    duration:5000,
+    origin:'top',
+    distance:'-250px'
+})
+ScrollReveal().reveal('.contenedor',{
+    duration:4000,
+    origin:'right',
+    distance:'-100px'
+})
 
 
 /*MODA*/

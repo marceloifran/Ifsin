@@ -57,8 +57,8 @@
         <div class="contenedor">
             <h1 class="text-center">Contactanos</h1>
             <div class="text-center">
-                <a href="https://api.whatsapp.com/send?phone=3874681205&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img/whatsapp.png" alt="" style="width: 30px;"> WhatsApp</a>
-                <a href="mailto:ifranm962@gmail.com" class="btn btn-danger btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img/gmail.png" style="width: 30px;" alt=""> Gmail</a>
+                <a href="https://api.whatsapp.com/send?phone=3874681205&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img_demas/whatsapp.png" alt="" style="width: 30px;"> WhatsApp</a>
+                <a href="mailto:ifranm962@gmail.com" class="btn btn-danger btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img_demas/gmail.png" style="width: 30px;" alt=""> Gmail</a>
             </div>
         </div>
         
@@ -71,9 +71,24 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script/perso.js"></script>
 <script>
-    ScrollReveal().reveal('.hero',{delay:200})
-    ScrollReveal().reveal('.contenedor-textos-main',{delay:300})
-    ScrollReveal().reveal('.imgp',{delay:300})
+     ScrollReveal().reveal('.textos-hero', {
+            duration: 3000,
+            origin: 'top',
+            distance: '-200px'
+        })
+        ScrollReveal().reveal('.contenedor-textos-main', {
+            delay: 300
+        })
+        ScrollReveal().reveal('.imgp', {
+            duration: 3000,
+            origin: 'botton',
+            distance: '-100px'
+        })
+        ScrollReveal().reveal('.contenedor', {
+            duration: 4000,
+            origin: 'right',
+            distance: '-100px'
+        })
 </script>
 
 </body>

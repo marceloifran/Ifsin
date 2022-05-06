@@ -34,8 +34,8 @@ if (res.status === 200){
         </ul>
         </div>
         <div class="text-center">
-        <a href="https://api.whatsapp.com/send?phone=${telefono}&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img/whatsapp.png" alt="" style="width: 30px;"> WhatsApp</a>
-        <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"><img src="img/llamada-telefonica.png" alt="" style="width: 30px;"> Llamada</a>
+        <a href="https://api.whatsapp.com/send?phone=${telefono}&text=Vengo%20desde%20Ifsin" class="btn btn-success btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"> <img src="img_demas/whatsapp.png" alt="" style="width: 30px;"> WhatsApp</a>
+        <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"><img src="img_demas/llamada-telefonica.png" alt="" style="width: 30px;"> Llamada</a>
         </div>
         <hr>
         `
