@@ -61,6 +61,7 @@
 
         </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="script/gastro.js"></script>
@@ -70,9 +71,24 @@
 </script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-    ScrollReveal().reveal('.hero',{delay:200})
-    ScrollReveal().reveal('.contenedor-textos-main',{delay:300})
-    ScrollReveal().reveal('.imgp',{delay:300})
+      ScrollReveal().reveal('.textos-hero', {
+            duration: 3000,
+            origin: 'top',
+            distance: '-200px'
+        })
+        ScrollReveal().reveal('.contenedor-textos-main', {
+            delay: 300
+        })
+        ScrollReveal().reveal('.imgp', {
+            duration: 3000,
+            origin: 'botton',
+            distance: '-100px'
+        })
+        ScrollReveal().reveal('.contenedor', {
+            duration: 4000,
+            origin: 'right',
+            distance: '-100px'
+        })
 </script>
 </body>
 
