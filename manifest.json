@@ -36,11 +36,14 @@
       "sizes": "96x96",
       "type": "image/png"
     },
+ 
     {
       "src": "iconos/logo.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
+
     {
       "src": "iconos/tech 8.png",
       "sizes": "32x32",

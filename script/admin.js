@@ -1,17 +1,32 @@
 const cardAmin = document.getElementById('admin')
+
 const api = async () => {
     try {
         const res = await fetch('https://ifsin-a5e80-default-rtdb.firebaseio.com/ifsin/admin.json')
-console.log (res);
+        console.log(res);
 
-if (res.status === 200){
-    const datos = await res.json();
-    console.log(datos);
+        if (res.status === 200) {
+            const datos = await res.json();
+            console.log(datos);
+        
 
-    for (const i in datos){
-        console.log(datos[i])
-        const {nombre,telefono,img1,img2,img3,ubicacion,desc,ofer1,ofer2,ofer3,ofer4} = datos[i]
-        cardAmin.innerHTML  += `
+            for (const i in datos) {
+                console.log(datos[i])
+                const {
+                    nombre,
+                    telefono,
+                    img1,
+                    img2,
+                    img3,
+                    ubicacion,
+                    desc,
+                    ofer1,
+                    ofer2,
+                    ofer3,
+                    ofer4
+                } = datos[i]
+              
+                cardAmin.innerHTML += `
        <div class="text-center"> <img src="img_demas/icons8-casa (1).gif" alt=""  style="width: 50px;"></div>
         <figure class="text-center">
         <blockquote class="blockquote">
@@ -37,14 +52,20 @@ if (res.status === 200){
         <a href="tel:+${telefono}" class="btn btn-primary btn-lg enabled" tabindex="-1" role="button" aria-enabled="true"><img src="img_demas/llamada-telefonica.png" alt="" style="width: 30px;"> Llamada</a>
         </div>
         <hr>
+
         `
-    }
-    
-}
-    }
-    catch (err) {
+                
+            }
+           
+
+        }
+
+
+    } catch (err) {
         console.log(err);
     }
 }
 
+
 api();
+   
